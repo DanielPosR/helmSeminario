@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELM MEXICO</title>
+    <link rel="icon" href="/img/logo.png" sizes="179*113" type="img/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenido-header contenedor">
+            <img src="/img/logo.png" class="logo" alt="Logotipo Helm México" id="logo" style="cursor: pointer;">
+
+
+            <button id="button-menu" class="button-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navegacion" id="nav">
+
+                <div class="nav-links">
+                    <a class="enlace" href="#registro">Registro</a>
+                    <a class="enlace" href="#acerca">Acerca de</a>
+                    <a class="enlace" href="#agenda">Agenda</a>
+                    <a class="enlace" href="#ponentes">Ponentes</a>
+                    <a class="enlace" href="#patrocinadores">Patrocinadores</a>
+                    <a class="enlace" href="#contacto">Contacto</a>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <section class="contenedor slider">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-swiper-autoplay="2000" loading="lazy">
+                    <img src="/img/Banner 01.png" alt="imagen banner">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="2000" loading="lazy">
+                    <img src="/img/Banner 02.png" alt="imagen banner">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="2000" loading="lazy">
+                    <img src="/img/Banner 03.png" alt="imagen banner">
+                </div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+
+    <div class="contenedor">
+        <img class="imagen-nombre-evento" src="/img/completo.png"
+            alt="Imagen Evento. Encuentro internacional de desarrollo farmacéutico">
+
+        <p class="cita">"La ciencia no conoce al país, porque el conocimiento pertenece a la humanidad, y es la antorcha
+            que
+            ilumina el mundo"</p>
+
+        <p class="autor">-Louis Pasteur</p>
+    </div>
+
+
+
+    <section class="section-form" id="registro">
+
+        <div class="contenedor contenido-form">
+
+            <div class="texto-formulario">
+
+                <p class="texto-parrafo">
+                    Está todo preparado para la tercera edición de nuestro Encuentro Internacional de Desarrollo
+                    Farmacéutico. Un evento que reune a expertos de la Industria Farmacéutica de México y el mundo para
+                    intercambiar conocimiento y experiencias reales que te ayudarán a resolver ese reto que te ha tomado
+                    tanto tiempo dentro del laboratorio
+                </p>
+
+
+                <p class="texto-parrafo">Porque detrás de todo medicamento y suplemento, siempre hay un farmacéutico.
+                </p>
+
+                <span class="span-form">¿Qué esperas? Inscríbete.</span>
+
+            </div>
+
+
+            <form class="formulario" id="formulario">
+
+                <label for="nombre">Nombre completo</label>
+                <input required class="input-form" type="text" name="nombre" id="nombre"
+                    placeholder="Ingresa tu nombre completo">
+
+                <label for="empresa">Empresa</label>
+                <input required class="input-form" type="text" name="empresa" id="empresa" placeholder="Empresa">
+
+                <label for="area">Área y puesto</label>
+                <input required class="input-form" type="text" name="area" id="area" placeholder="Área y puesto">
+
+                <label for="telefono">Teléfono</label>
+                <input required class="input-form" type="number" name="telefono" id="telefono"
+                    placeholder="Ej: 5536789521">
+
+                <label for="email">Email</label>
+                <input required class="input-form" type="email" name="email" id="email"
+                    placeholder="Ej: correo@correo.com">
+
+                <label for="ask">¿Cómo se enteró del evento?</label>
+                <input required class="input-form" type="text" name="ask" id="ask" placeholder="Ingresa tu respuesta">
+
+                <div class="transporte">
+                    <p>¿Requiere transporte?</p>
+
+                    <label for="si">Sí</label>
+                    <input type="radio" name="transporte" id="si" checked>
+
+                    <label for="no">No</label>
+                    <input type="radio" name="transporte" id="no">
+
+                    <select name="lugar" id="lugar" class="input-form">
+                        <option value="" selected disabled>-- Seleccione --</option>
+                        <option value="cdmx-unam">CDMX - Universidad</option>
+                        <option value="toreo-parque">Toreo - Parque Central</option>
+                        <option value="gdl-forum">GDL - Plaza Forum Tlaquepaque</option>
+                    </select>
+
+                </div>
+                <div class="form-footer">
+                    <button class="btn-enviar" id="btn-form">Enviar</button>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="contenedor img-heading" id="acerca">
+
+        <img src="/img/hotel.png" alt="Hotel hacienda jurica">
+
+        <p class="cita">"La ciencia más útil es aquella cuyo fruto es comunicable"</p>
+
+        <p class="autor">-Leonardo Da Vinci</p>
+    </div>
+
+    <div class="acerca-contenedor">
+
+        <div class="acerca-contenido">
+
+            <img src="/img/fondoacerca.png" alt="Imagen de La Hacienda Jurica">
+
+            <div class="info-acerca">
+                <p class="texto-acerca">
+                    Todo el trabajo que haces es importante, pero te mereces un tiempo para relajarte y tranquilizar tu
+                    mente.
+                    <br>
+                    <span>En esta ocasión Querétaro nos arropará con su riqueza cultural y sus grandes
+                        tradiciones.</span>
+                    <br>
+                    Disfrutaremos de un buen vino de la región y de la música tradicional mexicana.
+                    <br>
+                    <span>
+                        Hacienda Jurica by Brisas es la cede perfecta. Cuenta con una historia que se remonta al Siglo
+                        XVI,
+                        hasta la fecha.
+                    </span>
+                    <br>
+
+                    El lugar conserva gran parte de su arquitectura colonial, lo cual se aprecia en sus paredes de
+                    piedra
+                    volcánica y en varios edificios.
+                </p>
+
+                <img src="/img/net2.png" alt="Networking, ciencia y cultura en un solo espacio">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="contenedor img-heading" id="agenda">
+
+        <img src="/img/agenda.png" alt="Agenda del evento">
+
+        <span>06 Septiembre - 08 Septiembre</span>
+
+    </div>
+
+    <div class="dias">
+
+        <div class="dia" id="primerDia">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="25"
+                height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                </path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            <h4>Día 1</h4>
+            <p>06 de Septiembre</p>
+        </div>
+
+        <div class="dia" id="segundoDia">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                </path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            <h4>Día 2</h4>
+            <p>07 de Septiembre</p>
+        </div>
+
+        <div class="dia " id="tercerDia">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                </path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            <h4>Día 3</h4>
+            <p>08 de Septiembre</p>
+        </div>
+    </div>
+
+    <section class="agenda">
+
+        <div class="contenido-agenda">
+
+            <div class="actividades contenedor" style="padding: 2rem;" id="actividades">
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="contenedor img-heading" id="ponentes">
+
+        <img src="/img/invitados.png" alt="Ponentes invitados">
+
+    </div>
+
+    <section class="galeria-imagenes contenedor">
+       
+    </section>
+
+
+
+    <div class="contenedor img-heading" id="patrocinadores">
+
+        <img src="/img/patrocinadores.png" alt="Sección Patrocinadores">
+
+    </div>
+
+
+    <div class="patrocinadores contenedor">
+
+        <a href="https://mybasf.force.com/VirtualPharmaAssistants/s/" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/obasf.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="https://novonordiskpharmatech.com/" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/novo.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="https://history.evonik.com/en/inventions/eudragit" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/evonik.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="#" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/kemin.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="https://www.perlenpackaging.com/en/" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/perlen.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="https://dfepharma.com/our-innovation-and-solutions/c2f/" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/dfePharma.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="https://www.cecype.com/" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/cecype.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="https://www.usp.org/" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/usp.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="#" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/naturalcapsules.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+
+        <a href="#" class="patrocinador" target="_blank">
+            <img src="/img/patrocinadores/ipca.png" alt="Sponsor" class="imagen-sponsor">
+        </a>
+    </div>
+
+
+    <div class="contenedor img-heading" id="contacto">
+
+        <img src="/img/sede-contacto.png" alt="Seccion sede y contacto">
+
+    </div>
+
+
+    <section class="sede-contacto">
+        <div class="contenedor contacto">
+            <div class="informacion">
+
+                <h2>Contacto</h2>
+
+                <div class="contactos">
+
+                    <div class="contacto-info">
+                        <h3 class="nombre-contacto">S.Andrea Donato Angulo</h3>
+                        <p class="info">Teléfono: +52 55 (33) 3689 - 1233</p>
+                        <p class="info">Celular: +52 (33) 2182 - 8956</p>
+                        <p class="info">Correo electríco: sadonato@helmag.com</p>
+                    </div>
+
+                    <div class="contacto-info">
+                        <h3 class="nombre-contacto">Diana Laura González Guillén</h3>
+                        <p class="info">Teléfono: +52 55 52289900 Ext 5332</p>
+                        <p class="info">Celular: +52 1 55 1016 5763</p>
+                        <p class="info">Correo electrónico: dguillen@helmag.com</p>
+                    </div>
+
+                    <div class="contacto-info">
+                        <h3 class="nombre-contacto">Monserrat Centurión Cruz</h3>
+                        <p class="info">Teléfono: +52 (33) 10264671</p>
+                        <p class="info">Celular: +52 1 55 1016 5763</p>
+                        <p class="info">Correo electrónico: mcenturion@helmag.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29862.963195931286!2d-100.45451600000001!3d20.674851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d350b23c9a9053%3A0x2fcec5e40e69d98d!2sHotel%20Hacienda%20Jurica%20by%20Brisas!5e0!3m2!1ses-419!2smx!4v1687734257703!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapa">
+            </iframe>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+
+        <p class="copyright">
+            Helm de México, todos los derechos reservados 2023
+        </p>
+
+        <div class="info-redes">
+            <div class="redes">
+
+                <a target="_blank" href="https://www.facebook.com/helmdemexico">
+                    <img class="icono-redes" src="/img/redes/facebook.png" alt="icono facebook">
+                </a>
+
+                <a target="_blank" href="https://twitter.com/HelmDeMexico">
+                    <img class="icono-redes" src="/img/redes/twitter.png" alt="icono twitter">
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/company/helm-de-m%C3%A9xico/">
+                    <img class="icono-redes" src="/img/redes/linkedin.png" alt="icono linkedin">
+                </a>
+
+                <a target="_blank" href="https://www.youtube.com/channel/UCuFJ-fgHwULGh5ZnhUFWbJA">
+                    <img class="icono-redes" src="/img/redes/youtube.png" alt="icono youtube">
+                </a>
+            </div>
+            <p class="arroba">@helmdemexico</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+
+    <script src="/js/menu-responsive.js"></script>
+    <script src="/js/index.js" type="module"></script>
+    <script src="/js/agenda.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            // Default parameters
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 15000,
+            }
+        });
+    </script>
+
+</body>
+
+</html>
