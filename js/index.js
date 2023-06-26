@@ -1,4 +1,3 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
 
 const formulario = document.querySelector('#formulario')
 const btnEnviar = document.querySelector('#btn-form');
@@ -141,7 +140,7 @@ function crearGaleria() {
     for (let i = 1; i <= 12; i++) {
         const imagen = document.createElement('div');
         imagen.innerHTML = `
-            <img loading="lazy" src="/img/ponentes/ponente${i}.png" alt="Imagen Galería" width="500"
+            <img loading="lazy" src="./img/ponentes/ponente${i}.png" alt="Imagen Galería" width="500"
             height="300" class="imagen-galeria">
         `;
 
@@ -212,7 +211,7 @@ function mostrarImagen(id) {
     Swal.fire({
         html: `
         <div class="swal-imagen">
-            <img src="/img/ponentes/ponente${id}.png" class="swal-img" alt="Informacion sobre ${arrayPonentes[id].nombre}">
+            <img src="./img/ponentes/ponente${id}.png" class="swal-img" alt="Informacion sobre ${arrayPonentes[id].nombre}">
 
             <h3 class="swal-titulo">${arrayPonentes[id].nombre}</h3>
             <p class="swal-texto">${arrayPonentes[id].descripcion}</p>
