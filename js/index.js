@@ -131,24 +131,21 @@ function handleSubmit(e) {
 
 
 
-
-
 /** Galeria */
 function crearGaleria() {
-    const galeria = document.querySelector('.galeria-imagenes');
+    const galeria = document.querySelector('.slider-ponentes');
 
     for (let i = 1; i <= 12; i++) {
-        const imagen = document.createElement('div');
-        imagen.innerHTML = `
-            <img loading="lazy" src="./img/ponentes/ponente${i}.png" alt="Imagen Galería" width="500"
-            height="300" class="imagen-galeria">
-        `;
+        const imagen = document.createElement('img');
+        imagen.classList.add('img-slider')
+        imagen.src = `./img/ponentes/ponente${i}.png`;
 
         imagen.onclick = () => {
             mostrarImagen(i);
         }
 
         galeria.appendChild(imagen);
+
     }
 }
 

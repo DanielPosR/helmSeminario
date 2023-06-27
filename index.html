@@ -55,10 +55,16 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide" data-swiper-autoplay="2000">
-                    <img src="./img/Banner 01.png" alt="imagen banner">
+                    <picture>
+                        <source srcset="./img/Banner 01.avif" type="image/avif">
+                        <img loading="lazy" src="./img/Banner 01.png" alt="Banner">
+                    </picture>
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="2000">
-                    <img src="./img/Banner 02.png" alt="imagen banner">
+                    <picture>
+                        <source srcset="./img/Banner 02.avif" type="image/avif">
+                        <img loading="lazy" src="./img/Banner 02.png" alt="Banner">
+                    </picture>
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="2000">
                     <img src="./img/Banner 03.png" alt="imagen banner">
@@ -280,13 +286,15 @@
 
 
     <div class="contenedor img-heading" id="ponentes">
-
         <img src="./img/invitados.png" alt="Ponentes invitados">
-
     </div>
 
-    <section class="galeria-imagenes contenedor">
-       
+
+
+    <section class="contenedor">
+        <div class="slider-ponentes">
+
+        </div>
     </section>
 
 

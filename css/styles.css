@@ -61,7 +61,7 @@ li {
 
 @media (min-width: 768px) {
     .header {
-        position: static;
+        position: sticky;
         top: 0;
         z-index: 5;
     }
@@ -553,7 +553,6 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     line-height: 1.0;
     margin: 0;
-    border-radius: 1rem;
     transition: transform .3s ease-in-out;
     font-weight: 700;
 }
@@ -613,28 +612,39 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /** GALERIA PONENTES **/
-.galeria-imagenes {
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 100%;
-}
-
-.imagen-galeria {
-    width: 25rem;
+.img-slider {
+    width: 30rem;
+    height: 35rem;
     border-radius: 1rem;
     -webkit-box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.75);
+} 
+section.contenedor {
+    margin-top: 4rem;
 }
 
-.imagen-galeria:hover {
+.img-slider:hover {
     cursor: pointer;
 }
 
+.slider-ponentes {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: 40rem;
+  
+    scroll-snap-type: x mandatory;
+  
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider-ponentes .img-slider {
+    scroll-snap-align: center;
+}
+
+/** Modal de imagenes **/
 .swal-titulo {
     font-size: 1.8rem;
 }
