@@ -166,8 +166,8 @@ const agendaObj = {
             actividad: 'Conferencia 13 IPCA Mauricio Carvajal <br> Tendencias del Mercado Farmacéutico en México'
         },
         {
-            hora: '11:00 - 12:00 Conferencia 14 USP <br> Por definir',
-            actividad: ''
+            hora: '11:00 - 12:00 ',
+            actividad: 'Conferencia 14 USP <br> Por definir'
         },
         {
             hora: '12:30 - 12:50',
