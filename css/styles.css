@@ -548,7 +548,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--grisBg);
     padding: .5rem 0 0 0;
     width: 15rem;
-    height: 11rem;
+    height: 15rem;
     text-align: center;
     line-height: 1.0;
     margin: 0;
